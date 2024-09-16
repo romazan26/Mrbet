@@ -22,6 +22,16 @@
 		30F560382C98455C005EC895 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 30F560302C98455C005EC895 /* README.txt */; };
 		30F5603B2C984879005EC895 /* extensionText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F5603A2C984879005EC895 /* extensionText.swift */; };
 		30F5603D2C984A44005EC895 /* extensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F5603C2C984A44005EC895 /* extensionView.swift */; };
+		30F560412C986BA3005EC895 /* Mrbet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30F5603F2C986BA2005EC895 /* Mrbet.xcdatamodeld */; };
+		30F560442C986C9A005EC895 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F560432C986C9A005EC895 /* PlayerViewModel.swift */; };
+		30F560462C986CF2005EC895 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F560452C986CF2005EC895 /* CoreDataManager.swift */; };
+		30F560492C987130005EC895 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F560482C987130005EC895 /* GameView.swift */; };
+		30F5604B2C98A671005EC895 /* DaysCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F5604A2C98A671005EC895 /* DaysCountView.swift */; };
+		30F5604D2C98A934005EC895 /* HealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F5604C2C98A934005EC895 /* HealthView.swift */; };
+		30F5604F2C98AA8C005EC895 /* MoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F5604E2C98AA8C005EC895 /* MoneyView.swift */; };
+		30F560512C98B069005EC895 /* SelectSaveGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F560502C98B069005EC895 /* SelectSaveGameView.swift */; };
+		30F560542C98B1A4005EC895 /* SaveGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F560532C98B1A4005EC895 /* SaveGameCell.swift */; };
+		30F560572C98BAC9005EC895 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F560562C98BAC8005EC895 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +52,16 @@
 		30F560392C984626005EC895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		30F5603A2C984879005EC895 /* extensionText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionText.swift; sourceTree = "<group>"; };
 		30F5603C2C984A44005EC895 /* extensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionView.swift; sourceTree = "<group>"; };
+		30F560402C986BA3005EC895 /* Mrbet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mrbet.xcdatamodel; sourceTree = "<group>"; };
+		30F560432C986C9A005EC895 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		30F560452C986CF2005EC895 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		30F560482C987130005EC895 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		30F5604A2C98A671005EC895 /* DaysCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysCountView.swift; sourceTree = "<group>"; };
+		30F5604C2C98A934005EC895 /* HealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthView.swift; sourceTree = "<group>"; };
+		30F5604E2C98AA8C005EC895 /* MoneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyView.swift; sourceTree = "<group>"; };
+		30F560502C98B069005EC895 /* SelectSaveGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSaveGameView.swift; sourceTree = "<group>"; };
+		30F560532C98B1A4005EC895 /* SaveGameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveGameCell.swift; sourceTree = "<group>"; };
+		30F560562C98BAC8005EC895 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +94,10 @@
 		30F560132C982987005EC895 /* Mrbet */ = {
 			isa = PBXGroup;
 			children = (
+				30F560522C98B18F005EC895 /* Cells */,
+				30F560312C98455C005EC895 /* Londrina Solid */,
+				30F560422C986C81005EC895 /* ViewModels */,
+				30F5603E2C986B88005EC895 /* CoreData */,
 				30F560392C984626005EC895 /* Info.plist */,
 				30F560272C9843F5005EC895 /* Helpers */,
 				30F560222C982A05005EC895 /* Views */,
@@ -95,6 +119,8 @@
 		30F560222C982A05005EC895 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				30F560552C98BAB3005EC895 /* Settings */,
+				30F560472C987121005EC895 /* Game */,
 				30F560242C982BDB005EC895 /* Main */,
 				30F560232C982A13005EC895 /* Loading */,
 			);
@@ -113,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				30F560252C982BE9005EC895 /* MainView.swift */,
+				30F560502C98B069005EC895 /* SelectSaveGameView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -120,9 +147,11 @@
 		30F560272C9843F5005EC895 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				30F560312C98455C005EC895 /* Londrina Solid */,
 				30F560282C984450005EC895 /* MenuButtonView.swift */,
 				30F5603C2C984A44005EC895 /* extensionView.swift */,
+				30F5604A2C98A671005EC895 /* DaysCountView.swift */,
+				30F5604C2C98A934005EC895 /* HealthView.swift */,
+				30F5604E2C98AA8C005EC895 /* MoneyView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -140,6 +169,47 @@
 				30F5603A2C984879005EC895 /* extensionText.swift */,
 			);
 			path = "Londrina Solid";
+			sourceTree = "<group>";
+		};
+		30F5603E2C986B88005EC895 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				30F560452C986CF2005EC895 /* CoreDataManager.swift */,
+				30F5603F2C986BA2005EC895 /* Mrbet.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		30F560422C986C81005EC895 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				30F560432C986C9A005EC895 /* PlayerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		30F560472C987121005EC895 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				30F560482C987130005EC895 /* GameView.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		30F560522C98B18F005EC895 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				30F560532C98B1A4005EC895 /* SaveGameCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		30F560552C98BAB3005EC895 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				30F560562C98BAC8005EC895 /* SettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,10 +289,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30F5604F2C98AA8C005EC895 /* MoneyView.swift in Sources */,
+				30F5604D2C98A934005EC895 /* HealthView.swift in Sources */,
 				30F5603D2C984A44005EC895 /* extensionView.swift in Sources */,
+				30F560512C98B069005EC895 /* SelectSaveGameView.swift in Sources */,
+				30F560442C986C9A005EC895 /* PlayerViewModel.swift in Sources */,
+				30F560542C98B1A4005EC895 /* SaveGameCell.swift in Sources */,
 				30F560292C984450005EC895 /* MenuButtonView.swift in Sources */,
 				30F560172C982987005EC895 /* LoadingView.swift in Sources */,
+				30F560492C987130005EC895 /* GameView.swift in Sources */,
+				30F560572C98BAC9005EC895 /* SettingsView.swift in Sources */,
+				30F560412C986BA3005EC895 /* Mrbet.xcdatamodeld in Sources */,
+				30F5604B2C98A671005EC895 /* DaysCountView.swift in Sources */,
 				30F560262C982BEA005EC895 /* MainView.swift in Sources */,
+				30F560462C986CF2005EC895 /* CoreDataManager.swift in Sources */,
 				30F5603B2C984879005EC895 /* extensionText.swift in Sources */,
 				30F560152C982987005EC895 /* MrbetApp.swift in Sources */,
 			);
@@ -442,6 +522,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		30F5603F2C986BA2005EC895 /* Mrbet.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				30F560402C986BA3005EC895 /* Mrbet.xcdatamodel */,
+			);
+			currentVersion = 30F560402C986BA3005EC895 /* Mrbet.xcdatamodel */;
+			name = Mrbet.xcdatamodeld;
+			path = "/Users/roman/Downloads/XcodeProgramm/2 comand/Mrbet/Mrbet/CoreData/Mrbet.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 30F560092C982987005EC895 /* Project object */;
 }
