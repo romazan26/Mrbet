@@ -12,6 +12,16 @@
 		30F560192C982989005EC895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30F560182C982989005EC895 /* Assets.xcassets */; };
 		30F5601C2C982989005EC895 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30F5601B2C982989005EC895 /* Preview Assets.xcassets */; };
 		30F560262C982BEA005EC895 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F560252C982BE9005EC895 /* MainView.swift */; };
+		30F560292C984450005EC895 /* MenuButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F560282C984450005EC895 /* MenuButtonView.swift */; };
+		30F560322C98455C005EC895 /* COPYRIGHT.txt in Resources */ = {isa = PBXBuildFile; fileRef = 30F5602A2C98455C005EC895 /* COPYRIGHT.txt */; };
+		30F560332C98455C005EC895 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 30F5602B2C98455C005EC895 /* LICENSE.txt */; };
+		30F560342C98455C005EC895 /* LondrinaSolid-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30F5602C2C98455C005EC895 /* LondrinaSolid-Black.ttf */; };
+		30F560352C98455C005EC895 /* LondrinaSolid-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30F5602D2C98455C005EC895 /* LondrinaSolid-Light.ttf */; };
+		30F560362C98455C005EC895 /* LondrinaSolid-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30F5602E2C98455C005EC895 /* LondrinaSolid-Regular.ttf */; };
+		30F560372C98455C005EC895 /* LondrinaSolid-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30F5602F2C98455C005EC895 /* LondrinaSolid-Thin.ttf */; };
+		30F560382C98455C005EC895 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 30F560302C98455C005EC895 /* README.txt */; };
+		30F5603B2C984879005EC895 /* extensionText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F5603A2C984879005EC895 /* extensionText.swift */; };
+		30F5603D2C984A44005EC895 /* extensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F5603C2C984A44005EC895 /* extensionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +31,17 @@
 		30F560182C982989005EC895 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30F5601B2C982989005EC895 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		30F560252C982BE9005EC895 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		30F560282C984450005EC895 /* MenuButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonView.swift; sourceTree = "<group>"; };
+		30F5602A2C98455C005EC895 /* COPYRIGHT.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYRIGHT.txt; sourceTree = "<group>"; };
+		30F5602B2C98455C005EC895 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		30F5602C2C98455C005EC895 /* LondrinaSolid-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LondrinaSolid-Black.ttf"; sourceTree = "<group>"; };
+		30F5602D2C98455C005EC895 /* LondrinaSolid-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LondrinaSolid-Light.ttf"; sourceTree = "<group>"; };
+		30F5602E2C98455C005EC895 /* LondrinaSolid-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LondrinaSolid-Regular.ttf"; sourceTree = "<group>"; };
+		30F5602F2C98455C005EC895 /* LondrinaSolid-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LondrinaSolid-Thin.ttf"; sourceTree = "<group>"; };
+		30F560302C98455C005EC895 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		30F560392C984626005EC895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		30F5603A2C984879005EC895 /* extensionText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionText.swift; sourceTree = "<group>"; };
+		30F5603C2C984A44005EC895 /* extensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +74,8 @@
 		30F560132C982987005EC895 /* Mrbet */ = {
 			isa = PBXGroup;
 			children = (
+				30F560392C984626005EC895 /* Info.plist */,
+				30F560272C9843F5005EC895 /* Helpers */,
 				30F560222C982A05005EC895 /* Views */,
 				30F560142C982987005EC895 /* MrbetApp.swift */,
 				30F560182C982989005EC895 /* Assets.xcassets */,
@@ -92,6 +115,31 @@
 				30F560252C982BE9005EC895 /* MainView.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		30F560272C9843F5005EC895 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				30F560312C98455C005EC895 /* Londrina Solid */,
+				30F560282C984450005EC895 /* MenuButtonView.swift */,
+				30F5603C2C984A44005EC895 /* extensionView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		30F560312C98455C005EC895 /* Londrina Solid */ = {
+			isa = PBXGroup;
+			children = (
+				30F5602A2C98455C005EC895 /* COPYRIGHT.txt */,
+				30F5602B2C98455C005EC895 /* LICENSE.txt */,
+				30F5602C2C98455C005EC895 /* LondrinaSolid-Black.ttf */,
+				30F5602D2C98455C005EC895 /* LondrinaSolid-Light.ttf */,
+				30F5602E2C98455C005EC895 /* LondrinaSolid-Regular.ttf */,
+				30F5602F2C98455C005EC895 /* LondrinaSolid-Thin.ttf */,
+				30F560302C98455C005EC895 /* README.txt */,
+				30F5603A2C984879005EC895 /* extensionText.swift */,
+			);
+			path = "Londrina Solid";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,8 +200,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30F560352C98455C005EC895 /* LondrinaSolid-Light.ttf in Resources */,
+				30F560382C98455C005EC895 /* README.txt in Resources */,
+				30F560342C98455C005EC895 /* LondrinaSolid-Black.ttf in Resources */,
+				30F560332C98455C005EC895 /* LICENSE.txt in Resources */,
 				30F5601C2C982989005EC895 /* Preview Assets.xcassets in Resources */,
+				30F560372C98455C005EC895 /* LondrinaSolid-Thin.ttf in Resources */,
 				30F560192C982989005EC895 /* Assets.xcassets in Resources */,
+				30F560362C98455C005EC895 /* LondrinaSolid-Regular.ttf in Resources */,
+				30F560322C98455C005EC895 /* COPYRIGHT.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,8 +219,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30F5603D2C984A44005EC895 /* extensionView.swift in Sources */,
+				30F560292C984450005EC895 /* MenuButtonView.swift in Sources */,
 				30F560172C982987005EC895 /* LoadingView.swift in Sources */,
 				30F560262C982BEA005EC895 /* MainView.swift in Sources */,
+				30F5603B2C984879005EC895 /* extensionText.swift in Sources */,
 				30F560152C982987005EC895 /* MrbetApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,9 +357,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Mrbet/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "Mrbet/Preview\\ Content";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mrbet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -332,9 +392,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Mrbet/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "Mrbet/Preview\\ Content";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mrbet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
