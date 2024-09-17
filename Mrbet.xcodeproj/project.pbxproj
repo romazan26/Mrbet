@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3083B7B52C99A65C00C450CC /* SettingSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083B7B42C99A65C00C450CC /* SettingSlider.swift */; };
+		3083B7B92C99A98500C450CC /* CustomSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083B7B82C99A98500C450CC /* CustomSliderView.swift */; };
+		3083B7BB2C9A00E700C450CC /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083B7BA2C9A00E700C450CC /* SettingsViewModel.swift */; };
+		3083B7BE2C9A014D00C450CC /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083B7BD2C9A014D00C450CC /* SoundManager.swift */; };
+		3083B7C62C9A01DC00C450CC /* tapButton.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3083B7BF2C9A01DB00C450CC /* tapButton.mp3 */; };
+		3083B7C72C9A01DC00C450CC /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3083B7C02C9A01DC00C450CC /* win.wav */; };
+		3083B7C82C9A01DC00C450CC /* backMenu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3083B7C12C9A01DC00C450CC /* backMenu.mp3 */; };
+		3083B7C92C9A01DC00C450CC /* faiil.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3083B7C22C9A01DC00C450CC /* faiil.wav */; };
+		3083B7CA2C9A01DC00C450CC /* loss.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3083B7C32C9A01DC00C450CC /* loss.wav */; };
+		3083B7CB2C9A01DC00C450CC /* backGame.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3083B7C42C9A01DC00C450CC /* backGame.mp3 */; };
+		3083B7CC2C9A01DC00C450CC /* success.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3083B7C52C9A01DC00C450CC /* success.wav */; };
+		3083B7CF2C9A0B2500C450CC /* WebViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083B7CD2C9A0B2500C450CC /* WebViewPage.swift */; };
+		3083B7D02C9A0B2500C450CC /* webView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083B7CE2C9A0B2500C450CC /* webView.swift */; };
 		30F560152C982987005EC895 /* MrbetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F560142C982987005EC895 /* MrbetApp.swift */; };
 		30F560172C982987005EC895 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F560162C982987005EC895 /* LoadingView.swift */; };
 		30F560192C982989005EC895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30F560182C982989005EC895 /* Assets.xcassets */; };
@@ -35,6 +48,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3083B7B42C99A65C00C450CC /* SettingSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingSlider.swift; sourceTree = "<group>"; };
+		3083B7B82C99A98500C450CC /* CustomSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSliderView.swift; sourceTree = "<group>"; };
+		3083B7BA2C9A00E700C450CC /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		3083B7BD2C9A014D00C450CC /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		3083B7BF2C9A01DB00C450CC /* tapButton.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tapButton.mp3; sourceTree = "<group>"; };
+		3083B7C02C9A01DC00C450CC /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
+		3083B7C12C9A01DC00C450CC /* backMenu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backMenu.mp3; sourceTree = "<group>"; };
+		3083B7C22C9A01DC00C450CC /* faiil.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = faiil.wav; sourceTree = "<group>"; };
+		3083B7C32C9A01DC00C450CC /* loss.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = loss.wav; sourceTree = "<group>"; };
+		3083B7C42C9A01DC00C450CC /* backGame.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backGame.mp3; sourceTree = "<group>"; };
+		3083B7C52C9A01DC00C450CC /* success.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = success.wav; sourceTree = "<group>"; };
+		3083B7CD2C9A0B2500C450CC /* WebViewPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewPage.swift; sourceTree = "<group>"; };
+		3083B7CE2C9A0B2500C450CC /* webView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = webView.swift; sourceTree = "<group>"; };
 		30F560112C982987005EC895 /* Mrbet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mrbet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F560142C982987005EC895 /* MrbetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrbetApp.swift; sourceTree = "<group>"; };
 		30F560162C982987005EC895 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -75,6 +101,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3083B7BC2C9A013D00C450CC /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				3083B7C02C9A01DC00C450CC /* win.wav */,
+				3083B7BF2C9A01DB00C450CC /* tapButton.mp3 */,
+				3083B7C22C9A01DC00C450CC /* faiil.wav */,
+				3083B7C32C9A01DC00C450CC /* loss.wav */,
+				3083B7C52C9A01DC00C450CC /* success.wav */,
+				3083B7C42C9A01DC00C450CC /* backGame.mp3 */,
+				3083B7C12C9A01DC00C450CC /* backMenu.mp3 */,
+				3083B7BD2C9A014D00C450CC /* SoundManager.swift */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
 		30F560082C982987005EC895 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +135,7 @@
 		30F560132C982987005EC895 /* Mrbet */ = {
 			isa = PBXGroup;
 			children = (
+				3083B7BC2C9A013D00C450CC /* Sound */,
 				30F560522C98B18F005EC895 /* Cells */,
 				30F560312C98455C005EC895 /* Londrina Solid */,
 				30F560422C986C81005EC895 /* ViewModels */,
@@ -152,6 +194,8 @@
 				30F5604A2C98A671005EC895 /* DaysCountView.swift */,
 				30F5604C2C98A934005EC895 /* HealthView.swift */,
 				30F5604E2C98AA8C005EC895 /* MoneyView.swift */,
+				3083B7B42C99A65C00C450CC /* SettingSlider.swift */,
+				3083B7B82C99A98500C450CC /* CustomSliderView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -184,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				30F560432C986C9A005EC895 /* PlayerViewModel.swift */,
+				3083B7BA2C9A00E700C450CC /* SettingsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -207,6 +252,8 @@
 		30F560552C98BAB3005EC895 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				3083B7CE2C9A0B2500C450CC /* webView.swift */,
+				3083B7CD2C9A0B2500C450CC /* WebViewPage.swift */,
 				30F560562C98BAC8005EC895 /* SettingsView.swift */,
 			);
 			path = Settings;
@@ -271,14 +318,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				30F560352C98455C005EC895 /* LondrinaSolid-Light.ttf in Resources */,
+				3083B7C92C9A01DC00C450CC /* faiil.wav in Resources */,
+				3083B7CC2C9A01DC00C450CC /* success.wav in Resources */,
+				3083B7C72C9A01DC00C450CC /* win.wav in Resources */,
+				3083B7CB2C9A01DC00C450CC /* backGame.mp3 in Resources */,
 				30F560382C98455C005EC895 /* README.txt in Resources */,
 				30F560342C98455C005EC895 /* LondrinaSolid-Black.ttf in Resources */,
+				3083B7CA2C9A01DC00C450CC /* loss.wav in Resources */,
 				30F560332C98455C005EC895 /* LICENSE.txt in Resources */,
 				30F5601C2C982989005EC895 /* Preview Assets.xcassets in Resources */,
+				3083B7C62C9A01DC00C450CC /* tapButton.mp3 in Resources */,
 				30F560372C98455C005EC895 /* LondrinaSolid-Thin.ttf in Resources */,
 				30F560192C982989005EC895 /* Assets.xcassets in Resources */,
 				30F560362C98455C005EC895 /* LondrinaSolid-Regular.ttf in Resources */,
 				30F560322C98455C005EC895 /* COPYRIGHT.txt in Resources */,
+				3083B7C82C9A01DC00C450CC /* backMenu.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,16 +348,22 @@
 				30F5603D2C984A44005EC895 /* extensionView.swift in Sources */,
 				30F560512C98B069005EC895 /* SelectSaveGameView.swift in Sources */,
 				30F560442C986C9A005EC895 /* PlayerViewModel.swift in Sources */,
+				3083B7BB2C9A00E700C450CC /* SettingsViewModel.swift in Sources */,
 				30F560542C98B1A4005EC895 /* SaveGameCell.swift in Sources */,
+				3083B7D02C9A0B2500C450CC /* webView.swift in Sources */,
 				30F560292C984450005EC895 /* MenuButtonView.swift in Sources */,
 				30F560172C982987005EC895 /* LoadingView.swift in Sources */,
+				3083B7BE2C9A014D00C450CC /* SoundManager.swift in Sources */,
 				30F560492C987130005EC895 /* GameView.swift in Sources */,
 				30F560572C98BAC9005EC895 /* SettingsView.swift in Sources */,
 				30F560412C986BA3005EC895 /* Mrbet.xcdatamodeld in Sources */,
 				30F5604B2C98A671005EC895 /* DaysCountView.swift in Sources */,
 				30F560262C982BEA005EC895 /* MainView.swift in Sources */,
 				30F560462C986CF2005EC895 /* CoreDataManager.swift in Sources */,
+				3083B7CF2C9A0B2500C450CC /* WebViewPage.swift in Sources */,
+				3083B7B92C99A98500C450CC /* CustomSliderView.swift in Sources */,
 				30F5603B2C984879005EC895 /* extensionText.swift in Sources */,
+				3083B7B52C99A65C00C450CC /* SettingSlider.swift in Sources */,
 				30F560152C982987005EC895 /* MrbetApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
