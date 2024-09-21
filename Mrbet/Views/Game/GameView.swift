@@ -10,6 +10,7 @@ import SwiftUI
 struct GameView: View {
     @Environment(\.dismiss) var dismiss
     @StateObject var vm: PlayerViewModel
+    @StateObject var player: Player
     var body: some View {
         ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom)) {
             //MARK: - BackGround View
@@ -39,8 +40,13 @@ struct GameView: View {
                     DaysCountView(days: "15")
                     Spacer()
                     VStack(spacing: 5) {
-                        HealthView(health: 99)
-                        MoneyView(money: 1250)
+                        //MARK: - Health button
+                        NavigationLink {
+                            HealthUpView(vm: vm)
+                        } label: {
+                            HealthView(health: player.health)
+                        }
+                        MoneyView(money: player.money)
                     }
                 }
                 Spacer()
@@ -61,21 +67,41 @@ struct GameView: View {
                     .frame(height: scaleScreen_y(150))
                 .frame(maxWidth: .infinity)
                 HStack{
-                    Image(.purchases)
-                        .resizable()
-                        .frame(width: scaleScreen_x(106), height: scaleScreen_y(120))
-                    Image(.income)
-                        .resizable()
-                        .frame(width: scaleScreen_x(106), height: scaleScreen_y(120))
-                    Image(.training)
-                        .resizable()
-                        .frame(width: scaleScreen_x(106), height: scaleScreen_y(120))
+                    //MARK: - Purchases button
+                    NavigationLink {
+                        PurchasesView(vm: vm)
+                    } label: {
+                        Image(.purchasess)
+                            .resizable()
+                            .frame(width: scaleScreen_x(106), height: scaleScreen_y(120))
+                    }
+
+                    //MARK: - Income button
+                    NavigationLink {
+                        IncomeView(vm: vm, player: player)
+                    } label: {
+                        Image(.income)
+                            .resizable()
+                            .frame(width: scaleScreen_x(106), height: scaleScreen_y(120))
+                    }
+
+                    //MARK: - training button
+                    NavigationLink {
+                        TraningsView(vm: vm, player: player)
+                    } label: {
+                        Image(.training)
+                            .resizable()
+                            .frame(width: scaleScreen_x(106), height: scaleScreen_y(120))
+                    }
+
+                    
                 }
             }
         }
+        .navigationBarBackButtonHidden()
     }
 }
 
-#Preview {
-    GameView( vm: PlayerViewModel())
-}
+//#Preview {
+//    GameView( vm: PlayerViewModel())
+//}

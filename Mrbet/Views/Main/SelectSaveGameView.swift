@@ -36,7 +36,12 @@ struct SelectSaveGameView: View {
                 }
                 ScrollView {
                     ForEach(vm.players) { player in
-                        SaveGameCell(player: player)
+                        NavigationLink {
+                            GameView(vm: vm, player: player)
+                            
+                        } label: {
+                            SaveGameCell(player: player)
+                        }
                     }
                     
                 }

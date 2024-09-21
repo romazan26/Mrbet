@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MoneyView: View {
-    var money: Int16
+    var money: Int64
     var body: some View {
         ZStack {
             Image(.backToMoney)

@@ -9,8 +9,10 @@ import SwiftUI
 import StoreKit
 
 struct SettingsView: View {
+    
     @StateObject var vm = SettingsViewModel()
     @Environment(\.dismiss) var dismiss
+    
     var body: some View {
         ZStack {
             //MARK: - BackGround View
@@ -32,6 +34,7 @@ struct SettingsView: View {
                     Button {
                         dismiss()
                         vm.save()
+                        SoundManager.instance.playSound(sound: .tapButton)
                     } label: {
                         Image(.closeSetting)
                             .resizable()
@@ -40,21 +43,38 @@ struct SettingsView: View {
                 }
                 .padding()
                 Spacer()
+                //MARK: - Music slider
                 SettingSlider(text: "Music", sliderVolue: $vm.musicSlider)
                 
+                //MARK: - Sound slider
                 SettingSlider(text: "Sound", sliderVolue: $vm.soundsSlider)
                 HStack{
-                    Button(action: {vm.isPresentPolicy.toggle()}, label: {
+                    
+                    //MARK: - Policy button
+                    Button(action: {
+                        vm.isPresentPolicy.toggle()
+                        SoundManager.instance.playSound(sound: .tapButton)
+                    }, label: {
                         Image(.politicButton)
                             .resizable()
                             .frame(width: scaleScreen_x(44), height: scaleScreen_x(48))
                     })
-                    Button(action: {vm.isPresentShare.toggle()}, label: {
+                    
+                    //MARK: - Share butoon
+                    Button(action: {
+                        vm.isPresentShare.toggle()
+                        SoundManager.instance.playSound(sound: .tapButton)
+                    }, label: {
                         Image(.shareButton)
                             .resizable()
                             .frame(width: scaleScreen_x(44), height: scaleScreen_x(48))
                     })
-                    Button(action: { SKStoreReviewController.requestReview()}, label: {
+                    
+                    //MARK: - Rate button
+                    Button(action: {
+                        SKStoreReviewController.requestReview()
+                        SoundManager.instance.playSound(sound: .tapButton)
+                    }, label: {
                         Image(.rateButton)
                             .resizable()
                             .frame(width: scaleScreen_x(44), height: scaleScreen_x(48))

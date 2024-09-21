@@ -30,8 +30,10 @@ struct MainView: View {
                     //MARK: New game button
                     Button(action: {
                         vm.addPlayer()
-                        vm.isPresentGame = true
-                        
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2){
+                            vm.isPresentGame = true
+                        }
+                        SoundManager.instance.playSound(sound: .tapButton)
                     }, label: {
                         MenuButtonView(text: "New game", color: .yellowButton)
                     })
@@ -42,6 +44,9 @@ struct MainView: View {
                         //MARK: Continue button
                         NavigationLink {
                             SelectSaveGameView(vm: vm)
+                                .onAppear(perform: {
+                                    SoundManager.instance.playSound(sound: .tapButton)
+                                })
                         } label: {
                             MenuButtonView(text: "Continue", color: .pinkButton)
                         }
@@ -50,6 +55,9 @@ struct MainView: View {
                     //MARK: Settings button
                     NavigationLink {
                         SettingsView()
+                            .onAppear(perform: {
+                                SoundManager.instance.playSound(sound: .tapButton)
+                            })
                     } label: {
                         MenuButtonView(text: "Settings", color: .bluebuton)
                     }
@@ -62,7 +70,7 @@ struct MainView: View {
                 }
             }
             .fullScreenCover(isPresented: $vm.isPresentGame, content: {
-                GameView(vm: vm)
+                GameView(vm: vm, player: vm.simplePlayer)
             })
         }
         
