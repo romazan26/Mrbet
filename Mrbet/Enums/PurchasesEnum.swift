@@ -15,6 +15,17 @@ enum Purchases: CaseIterable, Identifiable {
     case rentAroom
     case buyAcasino
     
+    var level: Int {
+        switch self {
+        case .buyAform: 2
+        case .buyAsuit: 3
+        case .buyGlasses: 4
+        case .buyAslatMachine: 5
+        case .rentAroom: 6
+        case .buyAcasino: 7
+        }
+    }
+    
     var text: String {
         switch self{
         case .buyAform: "Buy a form"

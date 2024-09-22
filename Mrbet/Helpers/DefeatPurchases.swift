@@ -1,5 +1,5 @@
 //
-//  VictoryTrainingView.swift
+//  DefeatPurchases.swift
 //  Mrbet
 //
 //  Created by Роман on 22.09.2024.
@@ -7,26 +7,29 @@
 
 import SwiftUI
 
-struct VictoryTrainingView: View {
+struct DefeatPurchases: View {
     @StateObject var vm: PlayerViewModel
     var body: some View {
         ZStack {
             Color.black.opacity(0.5).ignoresSafeArea()
-            Image(.victoryTraining)
+            Image(.defeattraining)
                 .resizable()
                 .frame(width: scaleScreen_x(253), height: scaleScreen_y(235))
             
-            Text("Congratulations, you have \(vm.trainingText)")
+            Text("You don't have \(vm.purchasesText)$")
                 .LondrinaRegular(30)
+                .minimumScaleFactor(0.5)
                 .multilineTextAlignment(.center)
-                .frame(width: scaleScreen_x(223), height: scaleScreen_y(235))
+                .frame(width: scaleScreen_x(213), height: scaleScreen_y(235))
                 .foregroundStyle(.white)
+                .padding(.top)
+                
         }.onTapGesture {
-            vm.trainingVictory = false
+            vm.FailPurchases = false
         }
     }
 }
 
 #Preview {
-    VictoryTrainingView(vm: PlayerViewModel())
+    DefeatPurchases(vm: PlayerViewModel())
 }

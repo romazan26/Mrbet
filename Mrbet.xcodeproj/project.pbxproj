@@ -25,7 +25,7 @@
 		3083B7D72C9AC38300C450CC /* HealthUnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083B7D62C9AC38300C450CC /* HealthUnum.swift */; };
 		3083B7DC2C9ADC9400C450CC /* TrainingsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083B7DB2C9ADC9400C450CC /* TrainingsEnum.swift */; };
 		3083B7DE2C9ADF3400C450CC /* PurchasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083B7DD2C9ADF3400C450CC /* PurchasesView.swift */; };
-		3083B7E02C9AE39000C450CC /* PurchasesCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083B7DF2C9AE39000C450CC /* PurchasesCellView.swift */; };
+		3083B7E02C9AE39000C450CC /* IncomeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083B7DF2C9AE39000C450CC /* IncomeCellView.swift */; };
 		3083B7E22C9AE6F500C450CC /* Topbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083B7E12C9AE6F500C450CC /* Topbar.swift */; };
 		3083B7E42C9B203D00C450CC /* IncomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083B7E32C9B203D00C450CC /* IncomeView.swift */; };
 		3083B7E62C9B218900C450CC /* TraningsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083B7E52C9B218900C450CC /* TraningsView.swift */; };
@@ -35,6 +35,13 @@
 		30AD05632C9F5AA300D8C641 /* ConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AD05622C9F5AA300D8C641 /* ConditionsView.swift */; };
 		30AD05652C9F6C4700D8C641 /* VictoryTrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AD05642C9F6C4700D8C641 /* VictoryTrainingView.swift */; };
 		30AD05672C9F6D3000D8C641 /* DefeatTrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AD05662C9F6D3000D8C641 /* DefeatTrainingView.swift */; };
+		30AD05692CA0071900D8C641 /* SuccessPurchases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AD05682CA0071900D8C641 /* SuccessPurchases.swift */; };
+		30AD056B2CA008D500D8C641 /* DefeatPurchases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AD056A2CA008D500D8C641 /* DefeatPurchases.swift */; };
+		30AD056D2CA00D3F00D8C641 /* PlayerEmun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AD056C2CA00D3200D8C641 /* PlayerEmun.swift */; };
+		30AD056F2CA0763000D8C641 /* PurchasesCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AD056E2CA0762400D8C641 /* PurchasesCellView.swift */; };
+		30AD05712CA07C5A00D8C641 /* TrainingCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AD05702CA07C4E00D8C641 /* TrainingCellView.swift */; };
+		30AD05732CA09CF700D8C641 /* timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AD05722CA09CEC00D8C641 /* timer.swift */; };
+		30AD05752CA0AB8400D8C641 /* HealthAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AD05742CA0AB8400D8C641 /* HealthAlert.swift */; };
 		30F560152C982987005EC895 /* MrbetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F560142C982987005EC895 /* MrbetApp.swift */; };
 		30F560172C982987005EC895 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F560162C982987005EC895 /* LoadingView.swift */; };
 		30F560192C982989005EC895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30F560182C982989005EC895 /* Assets.xcassets */; };
@@ -81,7 +88,7 @@
 		3083B7D62C9AC38300C450CC /* HealthUnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthUnum.swift; sourceTree = "<group>"; };
 		3083B7DB2C9ADC9400C450CC /* TrainingsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingsEnum.swift; sourceTree = "<group>"; };
 		3083B7DD2C9ADF3400C450CC /* PurchasesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasesView.swift; sourceTree = "<group>"; };
-		3083B7DF2C9AE39000C450CC /* PurchasesCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasesCellView.swift; sourceTree = "<group>"; };
+		3083B7DF2C9AE39000C450CC /* IncomeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeCellView.swift; sourceTree = "<group>"; };
 		3083B7E12C9AE6F500C450CC /* Topbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topbar.swift; sourceTree = "<group>"; };
 		3083B7E32C9B203D00C450CC /* IncomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeView.swift; sourceTree = "<group>"; };
 		3083B7E52C9B218900C450CC /* TraningsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraningsView.swift; sourceTree = "<group>"; };
@@ -91,6 +98,13 @@
 		30AD05622C9F5AA300D8C641 /* ConditionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionsView.swift; sourceTree = "<group>"; };
 		30AD05642C9F6C4700D8C641 /* VictoryTrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VictoryTrainingView.swift; sourceTree = "<group>"; };
 		30AD05662C9F6D3000D8C641 /* DefeatTrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefeatTrainingView.swift; sourceTree = "<group>"; };
+		30AD05682CA0071900D8C641 /* SuccessPurchases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessPurchases.swift; sourceTree = "<group>"; };
+		30AD056A2CA008D500D8C641 /* DefeatPurchases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefeatPurchases.swift; sourceTree = "<group>"; };
+		30AD056C2CA00D3200D8C641 /* PlayerEmun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerEmun.swift; sourceTree = "<group>"; };
+		30AD056E2CA0762400D8C641 /* PurchasesCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasesCellView.swift; sourceTree = "<group>"; };
+		30AD05702CA07C4E00D8C641 /* TrainingCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingCellView.swift; sourceTree = "<group>"; };
+		30AD05722CA09CEC00D8C641 /* timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timer.swift; sourceTree = "<group>"; };
+		30AD05742CA0AB8400D8C641 /* HealthAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthAlert.swift; sourceTree = "<group>"; };
 		30F560112C982987005EC895 /* Mrbet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mrbet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F560142C982987005EC895 /* MrbetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrbetApp.swift; sourceTree = "<group>"; };
 		30F560162C982987005EC895 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -149,6 +163,7 @@
 		3083B7D12C9A151300C450CC /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				30AD056C2CA00D3200D8C641 /* PlayerEmun.swift */,
 				3083B7D22C9A154400C450CC /* PurchasesEnum.swift */,
 				3083B7D42C9ABAAF00C450CC /* IncomeEnum.swift */,
 				3083B7D62C9AC38300C450CC /* HealthUnum.swift */,
@@ -231,6 +246,7 @@
 		30F560272C9843F5005EC895 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				30AD05722CA09CEC00D8C641 /* timer.swift */,
 				30F560282C984450005EC895 /* MenuButtonView.swift */,
 				30F5603C2C984A44005EC895 /* extensionView.swift */,
 				30F5604A2C98A671005EC895 /* DaysCountView.swift */,
@@ -244,6 +260,9 @@
 				30AD05622C9F5AA300D8C641 /* ConditionsView.swift */,
 				30AD05642C9F6C4700D8C641 /* VictoryTrainingView.swift */,
 				30AD05662C9F6D3000D8C641 /* DefeatTrainingView.swift */,
+				30AD05682CA0071900D8C641 /* SuccessPurchases.swift */,
+				30AD056A2CA008D500D8C641 /* DefeatPurchases.swift */,
+				30AD05742CA0AB8400D8C641 /* HealthAlert.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -296,8 +315,10 @@
 		30F560522C98B18F005EC895 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				30AD05702CA07C4E00D8C641 /* TrainingCellView.swift */,
+				30AD056E2CA0762400D8C641 /* PurchasesCellView.swift */,
 				30F560532C98B1A4005EC895 /* SaveGameCell.swift */,
-				3083B7DF2C9AE39000C450CC /* PurchasesCellView.swift */,
+				3083B7DF2C9AE39000C450CC /* IncomeCellView.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -400,24 +421,29 @@
 				3083B7E42C9B203D00C450CC /* IncomeView.swift in Sources */,
 				30F5604D2C98A934005EC895 /* HealthView.swift in Sources */,
 				3083B7EA2C9B235C00C450CC /* HealthUpView.swift in Sources */,
+				30AD056F2CA0763000D8C641 /* PurchasesCellView.swift in Sources */,
 				3083B7DC2C9ADC9400C450CC /* TrainingsEnum.swift in Sources */,
 				3083B7DE2C9ADF3400C450CC /* PurchasesView.swift in Sources */,
+				30AD05692CA0071900D8C641 /* SuccessPurchases.swift in Sources */,
 				30F5603D2C984A44005EC895 /* extensionView.swift in Sources */,
 				30AD05612C9F55B400D8C641 /* FailIncomeView.swift in Sources */,
 				3083B7D52C9ABAAF00C450CC /* IncomeEnum.swift in Sources */,
 				30F560512C98B069005EC895 /* SelectSaveGameView.swift in Sources */,
 				30F560442C986C9A005EC895 /* PlayerViewModel.swift in Sources */,
 				30AD05672C9F6D3000D8C641 /* DefeatTrainingView.swift in Sources */,
+				30AD05752CA0AB8400D8C641 /* HealthAlert.swift in Sources */,
 				3083B7BB2C9A00E700C450CC /* SettingsViewModel.swift in Sources */,
 				30F560542C98B1A4005EC895 /* SaveGameCell.swift in Sources */,
+				30AD056B2CA008D500D8C641 /* DefeatPurchases.swift in Sources */,
 				30AD055F2C9F53E400D8C641 /* SuccessIncome.swift in Sources */,
 				3083B7D72C9AC38300C450CC /* HealthUnum.swift in Sources */,
 				3083B7D02C9A0B2500C450CC /* webView.swift in Sources */,
+				30AD05732CA09CF700D8C641 /* timer.swift in Sources */,
 				30F560292C984450005EC895 /* MenuButtonView.swift in Sources */,
 				30F560172C982987005EC895 /* LoadingView.swift in Sources */,
 				3083B7E62C9B218900C450CC /* TraningsView.swift in Sources */,
 				3083B7D32C9A154400C450CC /* PurchasesEnum.swift in Sources */,
-				3083B7E02C9AE39000C450CC /* PurchasesCellView.swift in Sources */,
+				3083B7E02C9AE39000C450CC /* IncomeCellView.swift in Sources */,
 				3083B7BE2C9A014D00C450CC /* SoundManager.swift in Sources */,
 				30F560492C987130005EC895 /* GameView.swift in Sources */,
 				30AD05652C9F6C4700D8C641 /* VictoryTrainingView.swift in Sources */,
@@ -426,11 +452,13 @@
 				30F560412C986BA3005EC895 /* Mrbet.xcdatamodeld in Sources */,
 				30F5604B2C98A671005EC895 /* DaysCountView.swift in Sources */,
 				30F560262C982BEA005EC895 /* MainView.swift in Sources */,
+				30AD05712CA07C5A00D8C641 /* TrainingCellView.swift in Sources */,
 				30F560462C986CF2005EC895 /* CoreDataManager.swift in Sources */,
 				3083B7CF2C9A0B2500C450CC /* WebViewPage.swift in Sources */,
 				3083B7B92C99A98500C450CC /* CustomSliderView.swift in Sources */,
 				30AD05632C9F5AA300D8C641 /* ConditionsView.swift in Sources */,
 				30F5603B2C984879005EC895 /* extensionText.swift in Sources */,
+				30AD056D2CA00D3F00D8C641 /* PlayerEmun.swift in Sources */,
 				3083B7B52C99A65C00C450CC /* SettingSlider.swift in Sources */,
 				30F560152C982987005EC895 /* MrbetApp.swift in Sources */,
 			);

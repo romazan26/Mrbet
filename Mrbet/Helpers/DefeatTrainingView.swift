@@ -16,7 +16,7 @@ struct DefeatTrainingView: View {
                 .resizable()
                 .frame(width: scaleScreen_x(253), height: scaleScreen_y(235))
             
-            Text("You don't have \(vm.trainingText)$\nfor training")
+            Text("You don't have \(vm.trainingText)$")
                 .LondrinaRegular(32)
                 .multilineTextAlignment(.center)
                 .frame(width: scaleScreen_x(233), height: scaleScreen_y(235))

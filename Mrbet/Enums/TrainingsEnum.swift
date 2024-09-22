@@ -12,6 +12,15 @@ enum Trainings: CaseIterable, Identifiable {
     case GetPokerTraining
     case ManageTheCasino
     
+    var level: Int {
+        switch self {
+            
+        case .TreatTheManager: 1
+        case .GetPokerTraining: 2
+        case .ManageTheCasino: 3
+        }
+    }
+    
     var text: String {
         switch self{
             

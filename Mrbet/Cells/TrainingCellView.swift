@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct PurchasesCellView: View {
-
+struct TrainingCellView: View {
+    
     @ObservedObject var player: Player
-    let purchases: Purchases
+    let training: Trainings
     
     var body: some View {
         ZStack {
@@ -19,20 +19,20 @@ struct PurchasesCellView: View {
                 .resizable()
             HStack(spacing: 15) {
                 //MARK: - Image player
-                Image(purchases.image)
+                Image(training.image)
                     .resizable()
                     .frame(width: scaleScreen_x(100), height: scaleScreen_x(100))
                 
                 VStack(alignment: .leading) {
-                    Text(purchases.text)
+                    Text(training.text)
                         .LondrinaRegular(scaleScreen_x(20))
                     //MARK: - Monet player
-                    Text("$ \(purchases.price)")
+                    Text("$ \(training.price)")
                         .LondrinaRegular(scaleScreen_x(32))
                         .minimumScaleFactor(0.5)
                 }.foregroundStyle(.white)
                 Spacer()
-                if player.level < purchases.level {
+                if player.training < training.level {
                     Image(.rigrhtButton)
                         .resizable()
                         .frame(width: scaleScreen_x(52), height: scaleScreen_x(52))

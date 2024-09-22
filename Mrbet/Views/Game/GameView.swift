@@ -15,9 +15,9 @@ struct GameView: View {
         ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom)) {
             //MARK: - BackGround View
             
-                Image(.start)
-                    .resizable()
-                    .scaleEffect(x: 1.05, y: 1.05)
+            Image(vm.getBackgroundImage(player: player))
+                .resizable()
+                .scaleEffect(x: 1.05, y: 1.05)
                 .ignoresSafeArea()
             
             //MARK: - Top Toolbar
@@ -27,22 +27,22 @@ struct GameView: View {
                     Button(action: {dismiss()}, label: {
                         Image(.menu)
                             .resizable()
-                        .frame(width: scaleScreen_x(52), height: scaleScreen_y(52))
+                            .frame(width: scaleScreen_x(52), height: scaleScreen_y(52))
                     })
                     
                     Spacer()
                     Image(.name)
                         .resizable()
-                    .frame(width: scaleScreen_x(270), height: scaleScreen_y(52))
+                        .frame(width: scaleScreen_x(270), height: scaleScreen_y(52))
                     
                 }
                 HStack{
-                    DaysCountView(days: "15")
+                    DaysCountView(days: vm.daysSince(date: player.dataStart ?? Date()))
                     Spacer()
                     VStack(spacing: 5) {
                         //MARK: - Health button
                         NavigationLink {
-                            HealthUpView(vm: vm)
+                            HealthUpView(vm: vm, player: player)
                         } label: {
                             HealthView(health: player.health)
                         }
@@ -54,10 +54,12 @@ struct GameView: View {
             .padding(.horizontal)
             
             //MARK: - Player image
-                Image(.startPlayer)
-                        .resizable()
-                        .frame(width: scaleScreen_x(380), height: scaleScreen_y(650))
-                        .offset(y: 80)
+            Image(vm.getPlayerImage(player: player))
+                .resizable()
+                .frame(width: scaleScreen_x(380), height: scaleScreen_y(650))
+                .offset(y: 80)
+            
+            
             
             //MARK: - Bottom tool bar
             ZStack {
@@ -65,17 +67,21 @@ struct GameView: View {
                     .resizable()
                     .ignoresSafeArea()
                     .frame(height: scaleScreen_y(150))
-                .frame(maxWidth: .infinity)
+                    .frame(maxWidth: .infinity)
                 HStack{
+                    ///Cheats
+                    Button("cheat") {
+                        vm.chaetMoney(player: player)
+                    }
                     //MARK: - Purchases button
                     NavigationLink {
-                        PurchasesView(vm: vm)
+                        PurchasesView(vm: vm, player: player)
                     } label: {
                         Image(.purchasess)
                             .resizable()
                             .frame(width: scaleScreen_x(106), height: scaleScreen_y(120))
                     }
-
+                    
                     //MARK: - Income button
                     NavigationLink {
                         IncomeView(vm: vm, player: player)
@@ -84,7 +90,7 @@ struct GameView: View {
                             .resizable()
                             .frame(width: scaleScreen_x(106), height: scaleScreen_y(120))
                     }
-
+                    
                     //MARK: - training button
                     NavigationLink {
                         TraningsView(vm: vm, player: player)
@@ -93,7 +99,7 @@ struct GameView: View {
                             .resizable()
                             .frame(width: scaleScreen_x(106), height: scaleScreen_y(120))
                     }
-
+                    
                     
                 }
             }

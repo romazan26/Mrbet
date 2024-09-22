@@ -7,10 +7,11 @@
 
 import SwiftUI
 
-struct PurchasesCellView: View {
-
-    @ObservedObject var player: Player
-    let purchases: Purchases
+struct IncomeCellView: View {
+    var isIncome = false
+    var image: ImageResource
+    var price: Int64
+    var text: String
     
     var body: some View {
         ZStack {
@@ -19,26 +20,25 @@ struct PurchasesCellView: View {
                 .resizable()
             HStack(spacing: 15) {
                 //MARK: - Image player
-                Image(purchases.image)
+                Image(image)
                     .resizable()
                     .frame(width: scaleScreen_x(100), height: scaleScreen_x(100))
                 
                 VStack(alignment: .leading) {
-                    Text(purchases.text)
+                    Text(text)
                         .LondrinaRegular(scaleScreen_x(20))
                     //MARK: - Monet player
-                    Text("$ \(purchases.price)")
+                    Text(isIncome ? "$ 0-\(price)" : "$ \(price)")
                         .LondrinaRegular(scaleScreen_x(32))
                         .minimumScaleFactor(0.5)
                 }.foregroundStyle(.white)
                 Spacer()
-                if player.level < purchases.level {
+                
+               // switch
                     Image(.rigrhtButton)
                         .resizable()
                         .frame(width: scaleScreen_x(52), height: scaleScreen_x(52))
                         .padding(.trailing)
-                }
-                    
                 
             }
         }.frame(height: scaleScreen_x(100))
@@ -46,5 +46,5 @@ struct PurchasesCellView: View {
 }
 
 #Preview {
-    PurchasesCellView(player: Player(), purchases: Purchases.buyAcasino)
+    IncomeCellView(image: .cofe, price: 1000000, text: "Buy a slot machine")
 }

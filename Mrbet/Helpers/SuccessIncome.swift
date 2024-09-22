@@ -20,7 +20,9 @@ struct SuccessIncome: View {
                     .LondrinaRegular(32)
                 Text("+ $ \(vm.newMoney)")
                     .LondrinaRegular(32)
-            }.foregroundStyle(.white)
+            }
+            .foregroundStyle(.white)
+            .frame(width: scaleScreen_x(233), height: scaleScreen_y(235))
         }.onTapGesture {
             vm.successIncome = false
         }

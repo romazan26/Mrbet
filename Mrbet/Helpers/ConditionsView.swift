@@ -21,7 +21,7 @@ struct ConditionsView: View {
                     .multilineTextAlignment(.center)
                 
             }
-            .frame(width: scaleScreen_x(253), height: scaleScreen_y(352))
+            .frame(width: scaleScreen_x(233), height: scaleScreen_y(352))
             .foregroundStyle(.white)
         }.onTapGesture {
             vm.conditions = false

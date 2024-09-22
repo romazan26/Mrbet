@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SaveGameCell: View {
     @ObservedObject var player: Player
+    @StateObject var vm: PlayerViewModel
     var body: some View {
         ZStack {
             //MARK: - Background
@@ -16,7 +17,7 @@ struct SaveGameCell: View {
                 .resizable()
             HStack(spacing: 20) {
                 //MARK: - Image player
-                Image(.miniStart)
+                Image(vm.getMiniImage(player: player))
                     .resizable()
                     .frame(width: scaleScreen_x(100), height: scaleScreen_x(100))
                 
@@ -30,12 +31,12 @@ struct SaveGameCell: View {
                 Spacer()
                 
                 //MARK: - Game button
-                Button(action: {}, label: {
+                
                     Image(.rigrhtButton)
                         .resizable()
                         .frame(width: scaleScreen_x(52), height: scaleScreen_x(52))
                         .padding(.trailing, 25)
-                })
+              
             }
         }.frame(height: scaleScreen_x(100))
     }

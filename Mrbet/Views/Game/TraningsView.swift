@@ -22,9 +22,7 @@ struct TraningsView: View {
                         Button {
                             vm.trainingPlayer(player: player, training: training)
                         } label: {
-                            PurchasesCellView( image: training.image,
-                                               price: training.price,
-                                               text: training.text)
+                            TrainingCellView(player: player, training: training)
                         }
                     }
                 }.padding()
@@ -41,6 +39,9 @@ struct TraningsView: View {
             }
             if vm.trainingVictory {
                 VictoryTrainingView(vm: vm)
+            }
+            if vm.healthAlert {
+                HealthAlert(vm: vm)
             }
         }
     }

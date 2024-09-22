@@ -22,7 +22,7 @@ struct IncomeView: View {
                         Button {
                             vm.income(income: inc, player: player)
                         } label: {
-                            PurchasesCellView(isIncome: true,
+                            IncomeCellView(isIncome: true,
                                               image: inc.image,
                                               price: inc.maxPrice,
                                               text: inc.text)
@@ -45,6 +45,9 @@ struct IncomeView: View {
             }
             if vm.conditions {
                 ConditionsView(vm: vm)
+            }
+            if vm.healthAlert {
+                HealthAlert(vm: vm)
             }
         }
     }
