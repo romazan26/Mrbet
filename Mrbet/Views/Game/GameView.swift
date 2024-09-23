@@ -43,6 +43,9 @@ struct GameView: View {
                         //MARK: - Health button
                         NavigationLink {
                             HealthUpView(vm: vm, player: player)
+                                .onAppear {
+                                    SoundManager.instance.playSound(sound: .tapButton)
+                                }
                         } label: {
                             HealthView(health: player.health)
                         }
@@ -76,6 +79,9 @@ struct GameView: View {
                     //MARK: - Purchases button
                     NavigationLink {
                         PurchasesView(vm: vm, player: player)
+                            .onAppear {
+                                SoundManager.instance.playSound(sound: .tapButton)
+                            }
                     } label: {
                         Image(.purchasess)
                             .resizable()
@@ -85,6 +91,9 @@ struct GameView: View {
                     //MARK: - Income button
                     NavigationLink {
                         IncomeView(vm: vm, player: player)
+                            .onAppear {
+                                SoundManager.instance.playSound(sound: .tapButton)
+                            }
                     } label: {
                         Image(.income)
                             .resizable()
@@ -94,6 +103,9 @@ struct GameView: View {
                     //MARK: - training button
                     NavigationLink {
                         TraningsView(vm: vm, player: player)
+                            .onAppear {
+                                SoundManager.instance.playSound(sound: .tapButton)
+                            }
                     } label: {
                         Image(.training)
                             .resizable()
@@ -103,6 +115,12 @@ struct GameView: View {
                     
                 }
             }
+        }
+        .onAppear {
+            if (MusicManager.instance.player?.isPlaying == false ?? false) {
+                MusicManager.instance.playSound(sound: .backGame)
+            }
+            
         }
         .navigationBarBackButtonHidden()
     }

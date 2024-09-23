@@ -39,15 +39,27 @@ struct IncomeView: View {
             .navigationBarBackButtonHidden()
             if vm.failIncome {
                 FailIncomeView(vm: vm)
+                    .onAppear {
+                        SoundManager.instance.playSound(sound: .faiil)
+                    }
             }
             if vm.successIncome {
                 SuccessIncome(vm: vm)
+                    .onAppear {
+                        SoundManager.instance.playSound(sound: .success)
+                    }
             }
             if vm.conditions {
                 ConditionsView(vm: vm)
+                    .onAppear {
+                        SoundManager.instance.playSound(sound: .loss)
+                    }
             }
             if vm.healthAlert {
                 HealthAlert(vm: vm)
+                    .onAppear {
+                        SoundManager.instance.playSound(sound: .faiil)
+                    }
             }
         }
     }

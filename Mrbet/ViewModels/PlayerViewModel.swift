@@ -33,6 +33,9 @@ final class PlayerViewModel: ObservableObject{
     @Published var FailPurchases = false
     @Published var purchasesText = ""
     
+    @Published var healthUpSuccess = false
+    @Published var healthUpFail = false
+    
     @Published var newMoney: Int64 = 0
     init(){
         getPlayers()
@@ -70,13 +73,14 @@ final class PlayerViewModel: ObservableObject{
                 if player.health < 0{
                     player.health = 0
                 }
-                
+                healthUpFail = true
             }
             if (50...100) .contains(percents) {
                 player.health += 5
                 if player.health > 100{
                     player.health = 100
                 }
+                healthUpSuccess = true
             }
         case .HaveAcoffee:
             if percents < 40{
@@ -84,13 +88,14 @@ final class PlayerViewModel: ObservableObject{
                 if player.health < 0{
                     player.health = 0
                 }
-                
+                healthUpFail = true
             }
             if (40...100) .contains(percents) {
                 player.health += 10
                 if player.health > 100{
                     player.health = 100
                 }
+                healthUpSuccess = true
             }
         case .ToEatInACafe:
             if player.money >= 500{
@@ -99,9 +104,10 @@ final class PlayerViewModel: ObservableObject{
                 if player.health > 100{
                     player.health = 100
                 }
+                healthUpSuccess = true
             }else{
-                trainingDefeat = true
-                trainingText = "500"
+                FailPurchases = true
+                purchasesText = "You don't have 500"
             }
         case .ToEatAtTheRestaurant:
             if player.money >= 5000{
@@ -110,18 +116,20 @@ final class PlayerViewModel: ObservableObject{
                 if player.health > 100{
                     player.health = 100
                 }
+                healthUpSuccess = true
             }else{
-                trainingDefeat = true
-                trainingText = "5000"
+                FailPurchases = true
+                purchasesText = "You don't have 5000"
             }
         case .HireAChef:
             if player.money >= 50000{
                 player.money -= 50000
                 player.health += 25
                 player.health = 100
+                healthUpSuccess = true
             }else{
-                trainingDefeat = true
-                trainingText = "50000"
+                FailPurchases = true
+                purchasesText = "You don't have 50000"
             }
         }
         }
@@ -192,7 +200,7 @@ final class PlayerViewModel: ObservableObject{
                     purchasesText = "Congratulations, you have bought the form"
                 }else{
                     FailPurchases = true
-                    purchasesText = "Have not enough money, 20000"
+                    purchasesText = "Have not enough money, 20000$"
                 }
             case .buyAsuit:
                 if player.money >= 35000{
@@ -204,7 +212,7 @@ final class PlayerViewModel: ObservableObject{
                     purchasesText = "Congratulations, you have bought the suit"
                 }else{
                     FailPurchases = true
-                    purchasesText = "Have not enough money, 35000"
+                    purchasesText = "Have not enough money, 35000$"
                 }
             case .buyGlasses:
                 if player.money >= 30000 && player.level == 3{
@@ -216,7 +224,7 @@ final class PlayerViewModel: ObservableObject{
                     purchasesText = "Congratulations, you have bought the glass"
                 }else{
                     FailPurchases = true
-                    purchasesText = "Have not enough money, 30000 and Have not suit"
+                    purchasesText = "Have not enough money, 30000$ and Have not suit"
                 }
             case .buyAslatMachine:
                 if player.money >= 100000 {
@@ -228,7 +236,7 @@ final class PlayerViewModel: ObservableObject{
                     purchasesText = "Congratulations, you have bought the slot Machine"
                 }else{
                     FailPurchases = true
-                    purchasesText = "Have not enough money, 100000"
+                    purchasesText = "Have not enough money, 100000$"
                 }
             case .rentAroom:
                 if player.money >= 250000 {
@@ -240,7 +248,7 @@ final class PlayerViewModel: ObservableObject{
                     purchasesText = "Congratulations, you rent a room"
                 }else{
                     FailPurchases = true
-                    purchasesText = "Have not enough money, 250000"
+                    purchasesText = "Have not enough money, 250000$"
                 }
             case .buyAcasino:
                 if player.money >= 10000000 {
@@ -252,7 +260,7 @@ final class PlayerViewModel: ObservableObject{
                     purchasesText = "Congratulations, you have bought the casino"
                 }else{
                     FailPurchases = true
-                    purchasesText = "Have not enough money, 10000000"
+                    purchasesText = "Have not enough money, 10000000$"
                 }
             }
         }

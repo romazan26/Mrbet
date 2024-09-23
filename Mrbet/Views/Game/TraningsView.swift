@@ -36,12 +36,21 @@ struct TraningsView: View {
             .navigationBarBackButtonHidden()
             if vm.trainingDefeat {
                 DefeatTrainingView(vm: vm)
+                    .onAppear {
+                        SoundManager.instance.playSound(sound: .faiil)
+                    }
             }
             if vm.trainingVictory {
                 VictoryTrainingView(vm: vm)
+                    .onAppear {
+                        SoundManager.instance.playSound(sound: .success)
+                    }
             }
             if vm.healthAlert {
                 HealthAlert(vm: vm)
+                    .onAppear {
+                        SoundManager.instance.playSound(sound: .faiil)
+                    }
             }
         }
     }

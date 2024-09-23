@@ -38,12 +38,22 @@ struct PurchasesView: View {
             
             if vm.SuccessPurchases {
                 SuccessPurchases(vm: vm)
+                    .onAppear {
+                        SoundManager.instance.playSound(sound: .success)
+                    }
             }
             if vm.FailPurchases {
                 DefeatPurchases(vm: vm)
+                    .onAppear {
+                        SoundManager.instance.playSound(sound: .faiil)
+
+                    }
             }
             if vm.healthAlert {
                 HealthAlert(vm: vm)
+                    .onAppear {
+                        SoundManager.instance.playSound(sound: .loss)
+                    }
             }
                 
         }

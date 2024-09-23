@@ -29,6 +29,9 @@ struct MainView: View {
                 if vm.isPresentSeletect {
                     NavigationLink {
                         GameView(vm: vm, player: vm.players.last!)
+                            .onAppear {
+                                SoundManager.instance.playSound(sound: .tapButton)
+                            }
                         
                     } label: {
                         ZStack{
@@ -57,6 +60,7 @@ struct MainView: View {
                         Button {
                             vm.isPresentSeletect = true
                             vm.addPlayer()
+                            SoundManager.instance.playSound(sound: .tapButton)
                         } label: {
                             MenuButtonView(text: "New game", color: .yellowButton)
                         }
@@ -90,6 +94,9 @@ struct MainView: View {
             }
             .onAppear {
                 vm.isPresentSeletect = false
+                    MusicManager.instance.playSound(sound: .backMenu)
+                
+                
             }
         }
     }

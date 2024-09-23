@@ -40,8 +40,23 @@ struct HealthUpView: View {
             })
             .navigationBarBackButtonHidden()
             
-            if vm.trainingDefeat {
+            if vm.FailPurchases {
                 DefeatPurchases(vm: vm)
+                    .onAppear {
+                        SoundManager.instance.playSound(sound: .loss)
+                    }
+            }
+            if vm.healthUpFail {
+                HealthDownFailView(vm: vm)
+                    .onAppear {
+                        SoundManager.instance.playSound(sound: .faiil)
+                    }
+            }
+            if vm.healthUpSuccess {
+                HealthUpSuccesView(vm: vm)
+                    .onAppear {
+                        SoundManager.instance.playSound(sound: .win)
+                    }
             }
         }
     }

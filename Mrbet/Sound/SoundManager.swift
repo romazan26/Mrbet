@@ -14,7 +14,7 @@ enum SoundOption: String{
     case backGame
     case success
     case loss
-    case fail
+    case faiil
     case tapButton
     case win
 }

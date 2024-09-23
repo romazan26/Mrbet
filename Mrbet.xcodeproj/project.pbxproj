@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3040DB882CA1562E005DB983 /* HealthUpSuccesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3040DB872CA1562D005DB983 /* HealthUpSuccesView.swift */; };
+		3040DB8A2CA15845005DB983 /* HealthDownFailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3040DB892CA15845005DB983 /* HealthDownFailView.swift */; };
+		3040DB8F2CA16961005DB983 /* faiil.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3040DB8B2CA16961005DB983 /* faiil.mp3 */; };
+		3040DB902CA16961005DB983 /* win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3040DB8E2CA16961005DB983 /* win.mp3 */; };
+		3040DB912CA16961005DB983 /* loss.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3040DB8C2CA16961005DB983 /* loss.mp3 */; };
+		3040DB922CA16961005DB983 /* success.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3040DB8D2CA16961005DB983 /* success.mp3 */; };
 		3083B7B52C99A65C00C450CC /* SettingSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083B7B42C99A65C00C450CC /* SettingSlider.swift */; };
 		3083B7B92C99A98500C450CC /* CustomSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083B7B82C99A98500C450CC /* CustomSliderView.swift */; };
 		3083B7BB2C9A00E700C450CC /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083B7BA2C9A00E700C450CC /* SettingsViewModel.swift */; };
 		3083B7BE2C9A014D00C450CC /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083B7BD2C9A014D00C450CC /* SoundManager.swift */; };
 		3083B7C62C9A01DC00C450CC /* tapButton.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3083B7BF2C9A01DB00C450CC /* tapButton.mp3 */; };
-		3083B7C72C9A01DC00C450CC /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3083B7C02C9A01DC00C450CC /* win.wav */; };
 		3083B7C82C9A01DC00C450CC /* backMenu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3083B7C12C9A01DC00C450CC /* backMenu.mp3 */; };
-		3083B7C92C9A01DC00C450CC /* faiil.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3083B7C22C9A01DC00C450CC /* faiil.wav */; };
-		3083B7CA2C9A01DC00C450CC /* loss.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3083B7C32C9A01DC00C450CC /* loss.wav */; };
 		3083B7CB2C9A01DC00C450CC /* backGame.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3083B7C42C9A01DC00C450CC /* backGame.mp3 */; };
-		3083B7CC2C9A01DC00C450CC /* success.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3083B7C52C9A01DC00C450CC /* success.wav */; };
 		3083B7CF2C9A0B2500C450CC /* WebViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083B7CD2C9A0B2500C450CC /* WebViewPage.swift */; };
 		3083B7D02C9A0B2500C450CC /* webView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083B7CE2C9A0B2500C450CC /* webView.swift */; };
 		3083B7D32C9A154400C450CC /* PurchasesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083B7D22C9A154400C450CC /* PurchasesEnum.swift */; };
@@ -70,17 +72,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3040DB872CA1562D005DB983 /* HealthUpSuccesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthUpSuccesView.swift; sourceTree = "<group>"; };
+		3040DB892CA15845005DB983 /* HealthDownFailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDownFailView.swift; sourceTree = "<group>"; };
+		3040DB8B2CA16961005DB983 /* faiil.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = faiil.mp3; sourceTree = "<group>"; };
+		3040DB8C2CA16961005DB983 /* loss.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = loss.mp3; sourceTree = "<group>"; };
+		3040DB8D2CA16961005DB983 /* success.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = success.mp3; sourceTree = "<group>"; };
+		3040DB8E2CA16961005DB983 /* win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = win.mp3; sourceTree = "<group>"; };
 		3083B7B42C99A65C00C450CC /* SettingSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingSlider.swift; sourceTree = "<group>"; };
 		3083B7B82C99A98500C450CC /* CustomSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSliderView.swift; sourceTree = "<group>"; };
 		3083B7BA2C9A00E700C450CC /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		3083B7BD2C9A014D00C450CC /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		3083B7BF2C9A01DB00C450CC /* tapButton.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tapButton.mp3; sourceTree = "<group>"; };
-		3083B7C02C9A01DC00C450CC /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
 		3083B7C12C9A01DC00C450CC /* backMenu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backMenu.mp3; sourceTree = "<group>"; };
-		3083B7C22C9A01DC00C450CC /* faiil.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = faiil.wav; sourceTree = "<group>"; };
-		3083B7C32C9A01DC00C450CC /* loss.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = loss.wav; sourceTree = "<group>"; };
 		3083B7C42C9A01DC00C450CC /* backGame.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backGame.mp3; sourceTree = "<group>"; };
-		3083B7C52C9A01DC00C450CC /* success.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = success.wav; sourceTree = "<group>"; };
 		3083B7CD2C9A0B2500C450CC /* WebViewPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewPage.swift; sourceTree = "<group>"; };
 		3083B7CE2C9A0B2500C450CC /* webView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = webView.swift; sourceTree = "<group>"; };
 		3083B7D22C9A154400C450CC /* PurchasesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasesEnum.swift; sourceTree = "<group>"; };
@@ -148,11 +152,11 @@
 		3083B7BC2C9A013D00C450CC /* Sound */ = {
 			isa = PBXGroup;
 			children = (
-				3083B7C02C9A01DC00C450CC /* win.wav */,
+				3040DB8B2CA16961005DB983 /* faiil.mp3 */,
+				3040DB8C2CA16961005DB983 /* loss.mp3 */,
+				3040DB8D2CA16961005DB983 /* success.mp3 */,
+				3040DB8E2CA16961005DB983 /* win.mp3 */,
 				3083B7BF2C9A01DB00C450CC /* tapButton.mp3 */,
-				3083B7C22C9A01DC00C450CC /* faiil.wav */,
-				3083B7C32C9A01DC00C450CC /* loss.wav */,
-				3083B7C52C9A01DC00C450CC /* success.wav */,
 				3083B7C42C9A01DC00C450CC /* backGame.mp3 */,
 				3083B7C12C9A01DC00C450CC /* backMenu.mp3 */,
 				3083B7BD2C9A014D00C450CC /* SoundManager.swift */,
@@ -263,6 +267,8 @@
 				30AD05682CA0071900D8C641 /* SuccessPurchases.swift */,
 				30AD056A2CA008D500D8C641 /* DefeatPurchases.swift */,
 				30AD05742CA0AB8400D8C641 /* HealthAlert.swift */,
+				3040DB872CA1562D005DB983 /* HealthUpSuccesView.swift */,
+				3040DB892CA15845005DB983 /* HealthDownFailView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -392,13 +398,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				30F560352C98455C005EC895 /* LondrinaSolid-Light.ttf in Resources */,
-				3083B7C92C9A01DC00C450CC /* faiil.wav in Resources */,
-				3083B7CC2C9A01DC00C450CC /* success.wav in Resources */,
-				3083B7C72C9A01DC00C450CC /* win.wav in Resources */,
 				3083B7CB2C9A01DC00C450CC /* backGame.mp3 in Resources */,
 				30F560382C98455C005EC895 /* README.txt in Resources */,
 				30F560342C98455C005EC895 /* LondrinaSolid-Black.ttf in Resources */,
-				3083B7CA2C9A01DC00C450CC /* loss.wav in Resources */,
 				30F560332C98455C005EC895 /* LICENSE.txt in Resources */,
 				30F5601C2C982989005EC895 /* Preview Assets.xcassets in Resources */,
 				3083B7C62C9A01DC00C450CC /* tapButton.mp3 in Resources */,
@@ -407,6 +409,10 @@
 				30F560362C98455C005EC895 /* LondrinaSolid-Regular.ttf in Resources */,
 				30F560322C98455C005EC895 /* COPYRIGHT.txt in Resources */,
 				3083B7C82C9A01DC00C450CC /* backMenu.mp3 in Resources */,
+				3040DB8F2CA16961005DB983 /* faiil.mp3 in Resources */,
+				3040DB902CA16961005DB983 /* win.mp3 in Resources */,
+				3040DB912CA16961005DB983 /* loss.mp3 in Resources */,
+				3040DB922CA16961005DB983 /* success.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +431,7 @@
 				3083B7DC2C9ADC9400C450CC /* TrainingsEnum.swift in Sources */,
 				3083B7DE2C9ADF3400C450CC /* PurchasesView.swift in Sources */,
 				30AD05692CA0071900D8C641 /* SuccessPurchases.swift in Sources */,
+				3040DB8A2CA15845005DB983 /* HealthDownFailView.swift in Sources */,
 				30F5603D2C984A44005EC895 /* extensionView.swift in Sources */,
 				30AD05612C9F55B400D8C641 /* FailIncomeView.swift in Sources */,
 				3083B7D52C9ABAAF00C450CC /* IncomeEnum.swift in Sources */,
@@ -458,6 +465,7 @@
 				3083B7B92C99A98500C450CC /* CustomSliderView.swift in Sources */,
 				30AD05632C9F5AA300D8C641 /* ConditionsView.swift in Sources */,
 				30F5603B2C984879005EC895 /* extensionText.swift in Sources */,
+				3040DB882CA1562E005DB983 /* HealthUpSuccesView.swift in Sources */,
 				30AD056D2CA00D3F00D8C641 /* PlayerEmun.swift in Sources */,
 				3083B7B52C99A65C00C450CC /* SettingSlider.swift in Sources */,
 				30F560152C982987005EC895 /* MrbetApp.swift in Sources */,

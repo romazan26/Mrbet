@@ -16,7 +16,7 @@ struct DefeatPurchases: View {
                 .resizable()
                 .frame(width: scaleScreen_x(253), height: scaleScreen_y(235))
             
-            Text("You don't have \(vm.purchasesText)$")
+            Text("\(vm.purchasesText)")
                 .LondrinaRegular(30)
                 .minimumScaleFactor(0.5)
                 .multilineTextAlignment(.center)
