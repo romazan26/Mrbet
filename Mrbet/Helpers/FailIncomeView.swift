@@ -9,6 +9,7 @@ import SwiftUI
 
 struct FailIncomeView: View {
     @StateObject var vm: PlayerViewModel
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         ZStack {
             Color.black.opacity(0.5).ignoresSafeArea()
@@ -26,6 +27,7 @@ struct FailIncomeView: View {
             .foregroundStyle(.white)
         }.onTapGesture {
             vm.failIncome = false
+            dismiss()
         }
     }
 }

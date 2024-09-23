@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SuccessIncome: View {
+    @Environment(\.dismiss) var dismiss
     @StateObject var vm: PlayerViewModel
     var body: some View {
         ZStack {
@@ -25,6 +26,7 @@ struct SuccessIncome: View {
             .frame(width: scaleScreen_x(233), height: scaleScreen_y(235))
         }.onTapGesture {
             vm.successIncome = false
+            dismiss()
         }
     }
 }

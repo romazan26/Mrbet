@@ -13,6 +13,7 @@
 		3040DB902CA16961005DB983 /* win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3040DB8E2CA16961005DB983 /* win.mp3 */; };
 		3040DB912CA16961005DB983 /* loss.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3040DB8C2CA16961005DB983 /* loss.mp3 */; };
 		3040DB922CA16961005DB983 /* success.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3040DB8D2CA16961005DB983 /* success.mp3 */; };
+		3040DB942CA1719C005DB983 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3040DB932CA1719C005DB983 /* GameOverView.swift */; };
 		3083B7B52C99A65C00C450CC /* SettingSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083B7B42C99A65C00C450CC /* SettingSlider.swift */; };
 		3083B7B92C99A98500C450CC /* CustomSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083B7B82C99A98500C450CC /* CustomSliderView.swift */; };
 		3083B7BB2C9A00E700C450CC /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083B7BA2C9A00E700C450CC /* SettingsViewModel.swift */; };
@@ -78,6 +79,7 @@
 		3040DB8C2CA16961005DB983 /* loss.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = loss.mp3; sourceTree = "<group>"; };
 		3040DB8D2CA16961005DB983 /* success.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = success.mp3; sourceTree = "<group>"; };
 		3040DB8E2CA16961005DB983 /* win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = win.mp3; sourceTree = "<group>"; };
+		3040DB932CA1719C005DB983 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
 		3083B7B42C99A65C00C450CC /* SettingSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingSlider.swift; sourceTree = "<group>"; };
 		3083B7B82C99A98500C450CC /* CustomSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSliderView.swift; sourceTree = "<group>"; };
 		3083B7BA2C9A00E700C450CC /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 				30AD05742CA0AB8400D8C641 /* HealthAlert.swift */,
 				3040DB872CA1562D005DB983 /* HealthUpSuccesView.swift */,
 				3040DB892CA15845005DB983 /* HealthDownFailView.swift */,
+				3040DB932CA1719C005DB983 /* GameOverView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				3083B7D02C9A0B2500C450CC /* webView.swift in Sources */,
 				30AD05732CA09CF700D8C641 /* timer.swift in Sources */,
 				30F560292C984450005EC895 /* MenuButtonView.swift in Sources */,
+				3040DB942CA1719C005DB983 /* GameOverView.swift in Sources */,
 				30F560172C982987005EC895 /* LoadingView.swift in Sources */,
 				3083B7E62C9B218900C450CC /* TraningsView.swift in Sources */,
 				3083B7D32C9A154400C450CC /* PurchasesEnum.swift in Sources */,

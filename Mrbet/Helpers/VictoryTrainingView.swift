@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct VictoryTrainingView: View {
+    @Environment(\.dismiss) var dismiss
     @StateObject var vm: PlayerViewModel
     var body: some View {
         ZStack {
@@ -23,6 +24,7 @@ struct VictoryTrainingView: View {
                 .foregroundStyle(.white)
         }.onTapGesture {
             vm.trainingVictory = false
+            dismiss()
         }
     }
 }

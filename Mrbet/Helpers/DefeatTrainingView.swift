@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DefeatTrainingView: View {
     @StateObject var vm: PlayerViewModel
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         ZStack {
             Color.black.opacity(0.5).ignoresSafeArea()
@@ -23,6 +24,7 @@ struct DefeatTrainingView: View {
                 .foregroundStyle(.white)
         }.onTapGesture {
             vm.trainingDefeat = false
+            dismiss()
         }
     }
 }

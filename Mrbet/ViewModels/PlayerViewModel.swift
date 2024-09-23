@@ -14,7 +14,9 @@ final class PlayerViewModel: ObservableObject{
     let manager = CoreDataManager.instance
     
     @Published var players:[Player] = []
-    @Published var simplePlayer: Player!
+   // @Published var simplePlayer: Player!
+    @Published var daysWithoutHealth = 0
+    @Published var gameOver = false
     
     @Published var isPresentGame = false
     @Published var isPresentSeletect = false
@@ -44,20 +46,33 @@ final class PlayerViewModel: ObservableObject{
     //MARK: - Cheats
     func chaetMoney(player: Player){
         player.money += 2000000
+        player.health = 1
         savePlayers()
+       
     }
     
    
-    //Mark: - Day off
+    //MARK: - Delete player
+    func deletePlayer(player: Player){
+        manager.context.delete(player)
+        savePlayers()
+        gameOver = false
+    }
     
-    func daysSince(date: Date) -> String {
-            let currentDate = Date()
-            let calendar = Calendar.current
-            
-            let components = calendar.dateComponents([.day], from: date, to: currentDate)
-            
-        return String(components.day ?? 0) 
-        
+    //MARK: - Day off
+    
+    func addDayOnGame(player: Player) {
+        if player.health != 0{
+            daysWithoutHealth = 0
+            player.dayOnGame += 1
+        }else{
+            daysWithoutHealth += 1
+            player.dayOnGame += 1
+            if daysWithoutHealth > 3{
+                gameOver = true
+            }
+        }
+        savePlayers()
     }
 
 
@@ -185,9 +200,7 @@ final class PlayerViewModel: ObservableObject{
     
     //MARK: - Purchases player
     func buyPurcheses(player: Player, purchases: Purchases){
-        if player.health <= 0{
-            healthAlert = true
-        }else{
+       
             switch purchases{
                 
             case .buyAform:
@@ -198,6 +211,7 @@ final class PlayerViewModel: ObservableObject{
                     if player.health < 0{ player.health = 0 }
                     SuccessPurchases = true
                     purchasesText = "Congratulations, you have bought the form"
+                    addDayOnGame(player: player)
                 }else{
                     FailPurchases = true
                     purchasesText = "Have not enough money, 20000$"
@@ -210,6 +224,7 @@ final class PlayerViewModel: ObservableObject{
                     if player.health < 0{ player.health = 0 }
                     SuccessPurchases = true
                     purchasesText = "Congratulations, you have bought the suit"
+                    addDayOnGame(player: player)
                 }else{
                     FailPurchases = true
                     purchasesText = "Have not enough money, 35000$"
@@ -222,6 +237,7 @@ final class PlayerViewModel: ObservableObject{
                     if player.health < 0{ player.health = 0 }
                     SuccessPurchases = true
                     purchasesText = "Congratulations, you have bought the glass"
+                    addDayOnGame(player: player)
                 }else{
                     FailPurchases = true
                     purchasesText = "Have not enough money, 30000$ and Have not suit"
@@ -234,6 +250,7 @@ final class PlayerViewModel: ObservableObject{
                     if player.health < 0{ player.health = 0 }
                     SuccessPurchases = true
                     purchasesText = "Congratulations, you have bought the slot Machine"
+                    addDayOnGame(player: player)
                 }else{
                     FailPurchases = true
                     purchasesText = "Have not enough money, 100000$"
@@ -246,6 +263,7 @@ final class PlayerViewModel: ObservableObject{
                     if player.health < 0{ player.health = 0 }
                     SuccessPurchases = true
                     purchasesText = "Congratulations, you rent a room"
+                    addDayOnGame(player: player)
                 }else{
                     FailPurchases = true
                     purchasesText = "Have not enough money, 250000$"
@@ -258,19 +276,19 @@ final class PlayerViewModel: ObservableObject{
                     if player.health < 0{ player.health = 0 }
                     SuccessPurchases = true
                     purchasesText = "Congratulations, you have bought the casino"
+                    addDayOnGame(player: player)
                 }else{
                     FailPurchases = true
                     purchasesText = "Have not enough money, 10000000$"
                 }
             }
-        }
+        savePlayers()
     }
     
     //MARK: - Training player
     func trainingPlayer(player: Player, training: Trainings){
-        if player.health <= 0{
-            healthAlert = true
-        }else{
+        
+
             switch training{
                 
             case .TreatTheManager:
@@ -282,6 +300,7 @@ final class PlayerViewModel: ObservableObject{
                         if player.health < 0{ player.health = 0 }
                         trainingVictory = true
                         trainingText = "TreatTheManager"
+                        addDayOnGame(player: player)
                     }else{
                         trainingDefeat = true
                         trainingText = "5000"
@@ -296,6 +315,7 @@ final class PlayerViewModel: ObservableObject{
                         if player.health < 0{ player.health = 0 }
                         trainingVictory = true
                         trainingText = "Get poker training"
+                        addDayOnGame(player: player)
                     }else{
                         trainingDefeat = true
                         trainingText = "50000"
@@ -310,23 +330,23 @@ final class PlayerViewModel: ObservableObject{
                         if player.health < 0{ player.health = 0 }
                         trainingVictory = true
                         trainingText = "Manage the casino"
+                        addDayOnGame(player: player)
                     }else{
                         trainingDefeat = true
                         trainingText = "150000"
                     }
                 }
             }
-        }
+        
         
         savePlayers()
     }
     
     //MARK: - Income
     func income(income: Income, player: Player){
+        addDayOnGame(player: player)
         let percents = Int.random(in: 1...100)
-        if player.health <= 0{
-            healthAlert = true
-        }else{
+        
             switch income{
                 
             case .FindingMoneyOnTheFloor:
@@ -504,7 +524,7 @@ final class PlayerViewModel: ObservableObject{
                     conditions = true
                     conditionsText = "Bay a casino \n Manage the casino"
                 }
-            }
+            
         }
         savePlayers()
     }
@@ -512,7 +532,7 @@ final class PlayerViewModel: ObservableObject{
     //MARK: - Add data
     func addPlayer(){
         let newPlayer = Player(context: manager.context)
-        newPlayer.dataStart = Date()
+        newPlayer.dayOnGame = 0
         newPlayer.money = 0
         newPlayer.health = 100
         newPlayer.level = 1
